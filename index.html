@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Duck Pond 🦆</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #87ceeb; /* sky */
+      font-family: Arial, sans-serif;
+    }
+
+    .pond {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 60%;
+      background: #5ec6e8;
+      border-top-left-radius: 50% 20%;
+      border-top-right-radius: 50% 20%;
+      box-shadow: inset 0 0 50px rgba(0,0,0,0.2);
+    }
+
+    .duck {
+      position: absolute;
+      font-size: 50px;
+      animation: swim 10s linear infinite;
+    }
+
+    @keyframes swim {
+      0% {
+        left: -10%;
+        bottom: 20%;
+        transform: scaleX(1);
+      }
+      25% {
+        left: 30%;
+        bottom: 25%;
+      }
+      50% {
+        left: 70%;
+        bottom: 20%;
+      }
+      51% {
+        transform: scaleX(-1); /* flip direction */
+      }
+      75% {
+        left: 30%;
+        bottom: 30%;
+      }
+      100% {
+        left: -10%;
+        bottom: 20%;
+        transform: scaleX(1);
+      }
+    }
+
+    .title {
+      position: absolute;
+      top: 20px;
+      width: 100%;
+      text-align: center;
+      font-size: 2rem;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="title">Cute Duck Pond 🦆💧</div>
+
+  <div class="pond"></div>
+  <div class="duck">🦆</div>
+
+</body>
+</html>
